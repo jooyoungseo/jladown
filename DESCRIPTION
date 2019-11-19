@@ -16,6 +16,6 @@ Imports:
     knitr,
     rmdfiltr
 Suggests: testit, xtable
-RoxygenNote: 6.1.99.9001
+RoxygenNote: 7.0.0
 URL: https://github.com/jooyoungseo/jladown
 BugReports: https://github.com/jooyoungseo/jladown/issues
