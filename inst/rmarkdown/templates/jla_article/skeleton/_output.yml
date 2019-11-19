@@ -1,0 +1,7 @@
+jladown::jla_pdf: default
+jladown::jla_word: default
+bookdown::epub_book: default
+bookdown::gitbook:
+  split_bib: true
+  config:
+    download: ["pdf", "word", "epub"]

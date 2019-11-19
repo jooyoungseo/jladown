@@ -1,0 +1,21 @@
+Package: jladown
+Title: Writing a Reproducible Article for Journal of Learning Analytics in R Markdown
+Version: 0.0.0.9000
+Authors@R: 
+    c(person("JooYoung", "Seo", role=c("aut", "cre"), email="jooyoung@psu.edu", comment = c(ORCID = "0000-0002-4064-6012")),
+    person(family = "Journal of Learning Analytics", role = c("aut", "cph")))
+Description: This package provides a reproducible R Markdown template according to the 'Journal of Learning Analytics' submission guidelines.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    bookdown,
+    rmarkdown,
+    yaml,
+    tinytex,
+    knitr,
+    rmdfiltr
+Suggests: testit, xtable
+RoxygenNote: 6.1.99.9001
+URL: https://github.com/jooyoungseo/jladown
+BugReports: https://github.com/jooyoungseo/jladown/issues
