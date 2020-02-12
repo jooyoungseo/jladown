@@ -1,6 +1,6 @@
 ---
 output:
-  github_document:
+  bookdown::github_document2:
     html_preview: false
 ---
 
