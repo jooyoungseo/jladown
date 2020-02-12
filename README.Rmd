@@ -54,3 +54,9 @@ rmarkdown::draft(file = "my_article",
 # After editing, use the bookdown knit button in RStudio; if you don't use RStudio, do the following in your R console:
 bookdown::render_book("my_article.Rmd", output_format = "all")
 ```
+
+# To-Do List
+
+- [ ] Add auto-word-counting capability using `rmdfiltr` package internally.
+- [ ] Fix `template.docx` does not take any effect on `jladown::jla_word()` output.
+- [ ] Make a cover page including jla logo for `bookdown::gitbook()` output.
