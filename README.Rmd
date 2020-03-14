@@ -45,7 +45,8 @@ While other formats are usable, `pdf` output is fully supported at this moment.
 ## Loading package:
 library(jladown)
 
-## Making a template using RStudio; do the following if you are a non-RStudio user:
+## Do the following if you are a non-RStudio user:
+
 rmarkdown::draft(file = "my_article", 
    template = "jla_article", 
    package = "jladown"

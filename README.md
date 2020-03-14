@@ -35,7 +35,8 @@ moment.
 ## Loading package:
 library(jladown)
 
-## Making a template using RStudio; do the following if you are a non-RStudio user:
+## Do the following if you are a non-RStudio user:
+
 rmarkdown::draft(
   file = "my_article",
   template = "jla_article",
@@ -48,7 +49,7 @@ bookdown::render_book("my_article.Rmd", output_format = "all")
 
 # To-Do List
 
-  - [ ] Add auto-word-counting capability using `rmdfiltr` package
+  - [x] Add auto-word-counting capability using `rmdfiltr` package
     internally.
   - [ ] Fix `template.docx` does not take any effect on
     `jladown::jla_word()` output.
