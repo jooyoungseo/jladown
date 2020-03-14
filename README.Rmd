@@ -41,7 +41,7 @@ This is a basic example which shows you how to use `jladown` package.
 
 While other formats are usable, `pdf` output is fully supported at this moment.
 
-```{r example, eval = FALSE}
+``` r
 ## Loading package:
 library(jladown)
 
@@ -52,7 +52,8 @@ rmarkdown::draft(file = "my_article",
    package = "jladown"
 )
 
-# After editing, use the bookdown knit button in RStudio; if you don't use RStudio, do the following in your R console:
+## After editing, use the bookdown knit button in RStudio; if you don't use RStudio, do the following in your R console:
+
 bookdown::render_book("my_article.Rmd", output_format = "all")
 ```
 

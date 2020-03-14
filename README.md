@@ -37,13 +37,13 @@ library(jladown)
 
 ## Do the following if you are a non-RStudio user:
 
-rmarkdown::draft(
-  file = "my_article",
-  template = "jla_article",
-  package = "jladown"
+rmarkdown::draft(file = "my_article", 
+   template = "jla_article", 
+   package = "jladown"
 )
 
-# After editing, use the bookdown knit button in RStudio; if you don't use RStudio, do the following in your R console:
+## After editing, use the bookdown knit button in RStudio; if you don't use RStudio, do the following in your R console:
+
 bookdown::render_book("my_article.Rmd", output_format = "all")
 ```
 
