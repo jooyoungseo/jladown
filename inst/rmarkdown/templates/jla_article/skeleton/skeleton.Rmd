@@ -40,8 +40,7 @@ abstract: |
  
 bibliography: [bib/sample.bib]
 knit: "bookdown::render_book"
-site: bookdown::bookdown_site
-documentclass: book
+site: "bookdown::bookdown_site"
 ---
 
 ```{r setup, include = FALSE, echo = FALSE, purl = FALSE}
