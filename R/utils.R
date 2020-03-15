@@ -1,9 +1,7 @@
-find_resource <- function(template, file = 'template.tex') {
-  res <- system.file(
-    "rmarkdown", "templates", template, "resources", file, package = "jladown"
-  )
-  if (res == "") stop(
-    "Couldn't find template file ", template, "/resources/", file, call. = FALSE
-  )
-  res
+find_resource <- function(template = "jla_article", file = 'template.tex') {
+system.file("rmarkdown", "templates", template, "resources", file, package = "jladown", mustWork = TRUE)
+}
+
+lua_filters = function(...) {
+  c(rbind("--lua-filter", find_resource("jla_article", c(...))))
 }
