@@ -5,3 +5,7 @@ system.file("rmarkdown", "templates", template, "resources", file, package = "jl
 lua_filters = function(...) {
   c(rbind("--lua-filter", find_resource("jla_article", c(...))))
 }
+
+jladown_file = function(...) {
+  system.file(..., package = 'jladown', mustWork = TRUE)
+}
