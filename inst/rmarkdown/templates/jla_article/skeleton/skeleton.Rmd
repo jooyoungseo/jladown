@@ -39,7 +39,7 @@ abstract: |
   Abstracts shall not exceed 200 words. Do not use a heading for the abstract or headings within the abstract.
  
 bibliography: [bib/sample.bib]
-knit: (function(x, ...) bookdown::render_book(x, output_format = "all"))
+knit: bookdown::render_book
 site: "bookdown::bookdown_site"
 ---
 

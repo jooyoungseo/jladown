@@ -38,8 +38,8 @@ keywords: Include a set of keywords related to your submission. Separate them by
 abstract: |
   Abstracts shall not exceed 200 words. Do not use a heading for the abstract or headings within the abstract.
  
-bibliography: [bib/sample.bib]
-knit: (function(x, ...) bookdown::render_book(x, output_format = "all"))
+bibliography: [sample.bib]
+knit: bookdown::render_book
 site: "bookdown::bookdown_site"
 ---
 
@@ -49,7 +49,7 @@ site: "bookdown::bookdown_site"
 #library(rmarkdown)
 
 # Set global knitr options here:
-knitr::opts_chunk$set(fig.path = 'fig/', echo=FALSE, cache=FALSE, cache.comments=FALSE, message=FALSE, warning=FALSE, tidy="styler")
+knitr::opts_chunk$set(echo=FALSE, cache=FALSE, cache.comments=FALSE, message=FALSE, warning=FALSE, tidy="styler")
 
 # Seed for random number generation:
 set.seed(7777)
@@ -94,7 +94,7 @@ Donec massa justo, ultricies quis facilisis sed, tristique nec metus. Vestibulum
 # Methods
 
 \begin{figure}[ht]\centering % Using \begin{figure*} makes the figure take up the entire width of the page
-\includegraphics[width=\linewidth/2]{fig/view}
+\includegraphics[width=\linewidth/2]{view}
 \caption{Picture}
 \label{fig:view}
 \end{figure}
@@ -123,7 +123,7 @@ Nullam semper imperdiet orci, at lacinia est aliquet et. Sed justo nibh, aliquet
 Sed est odio, ornare in rutrum et, dapibus in urna. Suspendisse varius massa in ipsum placerat, quis tristique magna consequat. Suspendisse non convallis augue. Quisque fermentum justo et lorem volutpat euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi sagittis interdum justo, eu consequat nisi convallis in. Sed tincidunt risus id lacinia ultrices. Phasellus ac ligula sed mi mattis lacinia ac non felis. Etiam at dui tellus.
 
 \begin{figure}[ht]\centering
-\includegraphics[width=\linewidth/2]{fig/results}
+\includegraphics[width=\linewidth/2]{results}
 \caption{In-text Picture}
 \label{fig:results}
 \end{figure}

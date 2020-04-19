@@ -45,15 +45,11 @@ While other formats are usable, `pdf` output is fully supported at this moment.
 ## Loading package:
 library(jladown)
 
-## Do the following if you are a non-RStudio user:
-
-rmarkdown::draft(file = "my_article", 
-   template = "jla_article", 
-   package = "jladown"
-)
+## Create a project template in current path (for non-RStudio users):
+jladown:::jladown_skeleton('.')
+## RStudio users: please use "New Project" and `jladown` template there.
 
 ## After editing, use the bookdown knit button in RStudio; if you don't use RStudio, do the following in your R console:
-
 bookdown::render_book("my_article.Rmd", output_format = "all")
 ```
 
