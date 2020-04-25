@@ -54,7 +54,7 @@ select “File” -\> “New File” -\> “R Markdown”, and then select the
 image.
 
 ![choosing the jladown R Markdown document template after the New File
--\> R Markdown dialogue](choosing-jla-template.png)
+-\> R Markdown dialogue](finding-jla-template.png)
 
 ## Using the template
 
