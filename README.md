@@ -3,7 +3,9 @@
 
 # jladown
 
-test <!-- badges: start --> <!-- badges: end -->
+<!-- badges: start -->
+
+<!-- badges: end -->
 
 The goal of jladown is to provide a reproducible template for the
 Journal of Learning Analytics using R Markdown in multiple formats such
