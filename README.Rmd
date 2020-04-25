@@ -37,21 +37,31 @@ remotes::install_github('jooyoungseo/jladown')
 
 ## Example
 
-This is a basic example which shows you how to use `jladown` package.
+This is a basic example which shows you how to use `jladown` package. While 
+other formats are usable, `pdf` output is fully supported at this moment.
 
-While other formats are usable, `pdf` output is fully supported at this moment.
+### Loading package
 
-``` r
-## Loading package:
+```{r}
 library(jladown)
-
-## Create a project template in current path (for non-RStudio users):
-jladown:::jladown_skeleton('.')
-## RStudio users: please use "New Project" and `jladown` template there.
-
-## After editing, use the bookdown knit button in RStudio; if you don't use RStudio, do the following in your R console:
-bookdown::render_book("my_article.Rmd", output_format = "all")
 ```
+
+## For non-RStudio users
+
+For non-RStudio users, you may create a project template in the current path 
+with the following function:
+
+```{r}
+jladown:::jladown_skeleton('.')
+```
+
+## For RStudio users
+
+For RStudio users, as long as `jladown` is installed, you can create a project 
+by creating a new R Markdown Document. From within RStudio, select "File" -> 
+"New File" -> "R Markdown", and then select the *Journal of Learning Analytics* 
+(`jladown) template.
+ 
 
 # To-Do List
 
