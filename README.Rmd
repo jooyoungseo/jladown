@@ -21,11 +21,28 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of jladown is to provide a reproducible template for the Journal of Learning Analytics using R Markdown in multiple formats such as pdf, gitbook, and Word.
+## Background
+
+While the [*Journal of Learning Analytics*](https://epress.lib.uts.edu.au/journals/index.php/JLA/index)
+provides [Word document](https://drive.google.com/uc?export=download&id=1ST6Fr9w1xgpRK_2Xuhczhrxw98RFqYOI) and
+[LaTeX](https://drive.google.com/uc?export=download&id=1LMkbm-HKAWliyTyRpzn1o0OxduJuVw7f) 
+as templates, these can be challenging to use for a number of reasons, 
+including the technical requirements of using a LaTeX template for the first 
+time, the difficulty that manually editing a Word document poses.
+
+Moreover, the imperative of producing reproducible analyses applies to including 
+results in a manuscript, and yet reproducibility is a challenge for this step of
+many author's process due to the need to manually enter (and interpret) results,
+whether using a Word document or LaTeX template.
+
+The goal of jladown is to provide a reproducible template for the *Journal of
+Learning Analytics* using R Markdown in multiple formats, particularly pdf, but
+also gitbook (for viewing via a web browser), and Word.
 
 ## Installation
 
-`jladown` is currently under development on GitHub. Please install and test the package as follows:
+`jladown` is currently under development on GitHub. Please install and test the 
+package as follows:
 
 ```{r installation, eval = FALSE}
 if(!require(remotes)) {
@@ -46,15 +63,6 @@ other formats are usable, `pdf` output is fully supported at this moment.
 library(jladown)
 ```
 
-### For non-RStudio users
-
-For non-RStudio users, you may create a project template in the current path 
-with the following function:
-
-```{r, eval = FALSE}
-jladown:::jladown_skeleton('.')
-```
-
 ### For RStudio users
 
 For RStudio users, as long as `jladown` is installed, you can create a project 
@@ -64,10 +72,22 @@ by creating a new R Markdown Document. From within RStudio, select "File" ->
 
 ![choosing the jladown R Markdown document template after the New File -> R Markdown dialogue](finding-jla-template.png)
 
-## Using the template
+### For non-RStudio users
 
-We provide an overview of using the template here; see the template for more 
-specific details.
+For non-RStudio users (or those looking to use the command line), 
+you may create a project template in the current path with the following 
+function:
+
+```{r, eval = FALSE}
+jladown:::jladown_skeleton('.')
+```
+
+## Using the template (index.Rmd)
+
+To use the template, open (if not alreay openeed) and edit the `index.Rmd` file.
+
+We provide a brief overview of using the template here; 
+see the template for more specific details.
 
 ### Front matter
 
