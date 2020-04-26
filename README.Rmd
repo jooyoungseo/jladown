@@ -75,23 +75,15 @@ most easily by creating a new project.
 1. From within RStudio, select 
 "File" -> 
 "New Project" ->
-"New Directory" 
-
-and then select the *Journal of Learning Analytics* 
-(`jladown) template, as at the bottom of the image below.
-
-![choosing the jladown R Markdown project template](img/1-jla-project-template.png)
+"New Directory" and then select the *Journal of Learning Analytics* 
+(`jladown`) template.
 
 2. Next, give your new directory a name, such as `my-jla-manuscript`.
-
-![choosing the jladown R Markdown project template](img/2-jla-directory-name.png)
 
 3. Then, edit the `index.Rmd` document, which should automatically be open, but 
 which can always be opened by selecting the file from its location in the
 "Files" pane of RStudio. More instructions on editing the `index.Rmd` file are
-provided in the "Using the template (index.Rmd)" section (see below).
-
-![choosing the jladown R Markdown project template](img/3-jla-edit-rmd.png)
+provided in the "Using the template (index.Rmd)" section.
 
 4. Finally, render the template to a document by clicking the 
 "Knit" button at the top of the `index.Rmd` document. The result should be a PDF
