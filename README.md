@@ -98,6 +98,10 @@ function:
 jladown:::jladown_skeleton(".")
 ```
 
+Then, edit the `index.Rmd` file. More instructions on editing the
+`index.Rmd` file are provided in the “Using the template (index.Rmd)”
+section.
+
 ## Using the template (index.Rmd)
 
 To use the template, open (if not alreay openeed) and edit the
@@ -148,6 +152,21 @@ function `knitr::include_graphics()`.
 References can be included in \[BibTeX format\]
 (<http://www.bibtex.org/>) using \[the apacite format\]
 (<http://ctan.uniminuto.edu/biblio/bibtex/contrib/apacite/apacite.pdf>)
+
+### Rendering the template
+
+Render the template to a document by clicking the “Knit” button at the
+top of the `index.Rmd` document.
+
+The result should be a PDF document which appears like the document
+below.
+
+![choosing the jladown R Markdown project
+template](img/4-jla-render.png)
+
+To render a document to a different output type, click the down arrow to
+the right of the “Knit” button, and select either the gitbook or Word
+document format.
 
 # To-Do List
 
