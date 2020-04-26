@@ -9,26 +9,29 @@
 
 ## Background
 
-While the [*Journal of Learning
-Analytics*](https://epress.lib.uts.edu.au/journals/index.php/JLA/index)
-provides [Word
+While the [*Journal of Learning Analytics
+(JLA)*](https://epress.lib.uts.edu.au/journals/index.php/JLA/index)
+provides a [Word
 document](https://drive.google.com/uc?export=download&id=1ST6Fr9w1xgpRK_2Xuhczhrxw98RFqYOI)
 and
 [LaTeX](https://drive.google.com/uc?export=download&id=1LMkbm-HKAWliyTyRpzn1o0OxduJuVw7f)
-as templates, these can be challenging to use for a number of reasons,
+template, these can be challenging to use for a number of reasons,
 including the technical requirements of using a LaTeX template for the
-first time, the difficulty that manually editing a Word document poses.
+first time and the challenge of editing a document in Word that is
+serving as a template.
 
-Moreover, the imperative of producing reproducible analyses applies to
-including results in a manuscript, and yet reproducibility is a
-challenge for this step of many author’s process due to the need to
-manually enter (and interpret) results, whether using a Word document or
-LaTeX template.
+Moreover, the imperative of producing reproducible analyses extends to
+writing manuscripts (see [van der Zee and
+Reich, 2018](https://journals.sagepub.com/doi/full/10.1177/2332858418787466)),
+and yet reproducibility is a serious challenge during this step, in part
+due to a lack of available tools.
 
 The goal of jladown is to provide a reproducible template for the
-*Journal of Learning Analytics* using R Markdown in multiple formats,
-particularly pdf, but also gitbook (for viewing via a web browser), and
-Word.
+*Journal of Learning Analytics* using R Markdown in multiple formats -
+particularly pdf - but also gitbook (for viewing via a web browser), and
+Word. This package allows for both text and R code to be written in a
+single document and to be rendered into a format that can be easily
+submitted to *JLA*.
 
 ## Installation
 
@@ -62,8 +65,10 @@ library(jladown)
 
 ### For RStudio users
 
-For RStudio users, as long as `jladown` is installed, you can use the
-package most easily by creating a new project.
+For RStudio users, as long as `jladown` is installed, we recommend to
+create a new project which contains the file used for the contents of
+the manuscript (in `index.Rmd`, described more below) and other files
+used to render the file.
 
 1.  From within RStudio, select “File” -\> “New Project” -\> “New
     Directory” and then select the *Journal of Learning Analytics*
@@ -91,7 +96,7 @@ Then, edit the `index.Rmd` file. More instructions on editing the
 `index.Rmd` file are provided in the “Using the template (index.Rmd)”
 section.
 
-## Editing the template (index.Rmd)
+## Editing the template (`index.Rmd`)
 
 To use the template, open (if not already opened) and edit the
 `index.Rmd` file.
@@ -153,9 +158,9 @@ below.
 ![choosing the jladown R Markdown project
 template](img/4-jla-render.png)
 
-To render a document to a different output type, click the down arrow to
-the right of the “Knit” button, and select either the gitbook or Word
-document format.
+To render a document to *a different output type* (other than a PDF),
+click the down arrow to the right of the “Knit” button, and select
+either the gitbook or Word document format.
 
 # To-Do List
 
