@@ -52,12 +52,16 @@ install.packages("remotes")
 remotes::install_github('jooyoungseo/jladown')
 ```
 
+While not required for installation (as other LaTeX installations will likely
+also suffice), we recommend the use of the [{tinytex}](https://yihui.org/tinytex/) R package and associated 
+LaTeX installation.
+
 ## Example
 
 This is a basic example which shows you how to use `jladown` package. While 
 other formats are usable, `pdf` output is fully supported at this moment.
 
-### Loading package
+### Loading the package
 
 ```{r, eval = FALSE}
 library(jladown)
@@ -65,12 +69,39 @@ library(jladown)
 
 ### For RStudio users
 
-For RStudio users, as long as `jladown` is installed, you can create a project 
-by creating a new R Markdown Document. From within RStudio, select "File" -> 
-"New File" -> "R Markdown", and then select the *Journal of Learning Analytics* 
-(`jladown) template, as in the below image.
+For RStudio users, as long as `jladown` is installed, you can use the package
+most easily by creating a new project. 
 
-![choosing the jladown R Markdown document template after the New File -> R Markdown dialogue](finding-jla-template.png)
+1. From within RStudio, select 
+"File" -> 
+"New Project" ->
+"New Directory" 
+
+and then select the *Journal of Learning Analytics* 
+(`jladown) template, as at the bottom of the image below.
+
+![choosing the jladown R Markdown project template](img/1-jla-project-template.png)
+
+2. Next, give your new directory a name, such as `my-jla-manuscript`.
+
+![choosing the jladown R Markdown project template](img/2-jla-directory-name.png)
+
+3. Then, edit the `index.Rmd` document, which should automatically be open, but 
+which can always be opened by selecting the file from its location in the
+"Files" pane of RStudio. More instructions on editing the `index.Rmd` file are
+provided in the "Using the template (index.Rmd)" section (see below).
+
+![choosing the jladown R Markdown project template](img/3-jla-edit-rmd.png)
+
+4. Finally, render the template to a document by clicking the 
+"Knit" button at the top of the `index.Rmd` document. The result should be a PDF
+document which appears like the document below.
+
+![choosing the jladown R Markdown project template](img/4-jla-render.png)
+
+To render a document to a 
+different output type, click the down arrow to the right of the "Knit" button,
+and select either the gitbook or Word document format.
 
 ### For non-RStudio users
 
