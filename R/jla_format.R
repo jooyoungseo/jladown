@@ -4,6 +4,11 @@
 #' @export
 
 jla_pdf <- function(..., pandoc_args = NULL) {
+# Making sure `tinytex` installed on system:
+if(!tinytex:::is_tinytex()) {
+tinytex::install_tinytex()
+}
+
 jla_pdf_format = bookdown::pdf_book(..., template = find_resource("jla_article", "template.tex"), keep_tex = TRUE, pandoc_args = c(
 '--metadata', 'citeproc=false',
 rmdfiltr::add_wordcount_filter(rmdfiltr::add_replace_ampersands_filter(rmdfiltr::add_citeproc_filter(args = NULL))),

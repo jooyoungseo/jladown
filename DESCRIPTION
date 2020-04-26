@@ -3,7 +3,7 @@ Title: Writing a Reproducible Article for Journal of Learning Analytics in R Mar
 Version: 0.0.0.9000
 Authors@R: 
     c(person("JooYoung", "Seo", role=c("aut", "cre"), email="jooyoung@psu.edu", comment = c(ORCID = "0000-0002-4064-6012")),
-    c(person("Joshua M.", "Rosenberg", role= ("aut"), email="jmrosenberg@utk.edu", comment = c(ORCID = "0000-0003-2170-0447")),
+    person("Joshua M.", "Rosenberg", role="aut", email="jmrosenberg@utk.edu", comment = c(ORCID = "0000-0003-2170-0447")),
     person(family = "Journal of Learning Analytics", role = c("cph")))
 Description: This package provides a reproducible R Markdown template according to the 'Journal of Learning Analytics' submission guidelines.
 License: GPL-3
@@ -16,7 +16,8 @@ Imports:
     knitr,
     rmdfiltr,
     pagedown,
-    xfun
+    xfun,
+    utils
 Suggests: 
     testit,
     xtable,

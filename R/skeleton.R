@@ -17,6 +17,12 @@ jladown_skeleton = function(path) {
   x = xfun::read_utf8(f)
   xfun::write_utf8(c(sprintf('book_filename: "%s"', basename(path)), x), f)
 
+if(!rstudioapi::isAvailable()) {
+for (i in c("_bookdown.yml", "_output.yml", "index.Rmd")) {
+utils::file.edit(i)
+}
+}
+
   TRUE
 }
 
