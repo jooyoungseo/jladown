@@ -77,17 +77,6 @@ package most easily by creating a new project.
     editing the `index.Rmd` file are provided in the “Using the template
     (index.Rmd)” section.
 
-4.  Finally, render the template to a document by clicking the “Knit”
-    button at the top of the `index.Rmd` document. The result should be
-    a PDF document which appears like the document below.
-
-![choosing the jladown R Markdown project
-template](img/4-jla-render.png)
-
-To render a document to a different output type, click the down arrow to
-the right of the “Knit” button, and select either the gitbook or Word
-document format.
-
 ### For non-RStudio users
 
 For non-RStudio users (or those looking to use the command line), you
@@ -104,7 +93,7 @@ section.
 
 ## Editing the template (index.Rmd)
 
-To use the template, open (if not alreay openeed) and edit the
+To use the template, open (if not already opened) and edit the
 `index.Rmd` file.
 
 We provide a brief overview of using the template here; see the template
