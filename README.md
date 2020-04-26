@@ -102,7 +102,7 @@ Then, edit the `index.Rmd` file. More instructions on editing the
 `index.Rmd` file are provided in the “Using the template (index.Rmd)”
 section.
 
-## Using the template (index.Rmd)
+## Editing the template (index.Rmd)
 
 To use the template, open (if not alreay openeed) and edit the
 `index.Rmd` file.
@@ -153,7 +153,7 @@ References can be included in \[BibTeX format\]
 (<http://www.bibtex.org/>) using \[the apacite format\]
 (<http://ctan.uniminuto.edu/biblio/bibtex/contrib/apacite/apacite.pdf>)
 
-### Rendering the template
+## Rendering a PDF (or gitbook or Word) document from the template
 
 Render the template to a document by clicking the “Knit” button at the
 top of the `index.Rmd` document.
